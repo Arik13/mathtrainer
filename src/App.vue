@@ -1,28 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <question header="Question 1" content = "Content 1" answerPrompt = "Prompt 1??"></question>
+    <question header="Question 2" content = "`sum_(i=1)^n i^3=((n(n+1))/2)^2`" answerPrompt = "Prompt 2??"></question>
+    <div></div>
   </div>
 </template>
 
+<!-- -->
+
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Question from './components/Question.vue';
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+    components: {
+      Question
+    },
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
